@@ -82,7 +82,7 @@ export default {
 @import '../style/variables';
 
 header {
-    height: 80px;
+    height: 85px;
     display: flex;
     justify-content: space-between;
 }
