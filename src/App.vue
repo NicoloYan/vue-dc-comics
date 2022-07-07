@@ -2,6 +2,7 @@
   <div id="app">
     <PageHeader />
     <main>
+      <PageJumbotron />
       <ContentSection />
       <CtaSection />
     </main>
@@ -16,6 +17,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import PageHeader from './components/PageHeader.vue'
+import PageJumbotron from './components/PageJumbotron.vue'
 import ContentSection from './components/ContentSection.vue'
 import CtaSection from './components/CtaSection.vue'
 import FooterTop from './components/FooterTop.vue'
@@ -25,6 +27,7 @@ export default {
   name: 'App',
   components: {
     PageHeader,
+    PageJumbotron,
     ContentSection,
     CtaSection,
     FooterTop,
