@@ -1,9 +1,16 @@
 <template>
     <div class="content_section">
+        <span class="current_series">CURRENT SERIES</span>
         <div class="container">
             <ProductCard v-for="element, index in products" :key="index" :productInfo="element"/>
         </div>
+        <div class="load_more">
+            <div class="load_more_btn">
+                LOAD MORE
+            </div>
+        </div>
     </div>
+    
 </template>
 
 <script>
@@ -97,19 +104,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../style/variables';
+
 .content_section {
     background-color: black;
-    display: flex;
-    align-items: center;
+    position: relative;
 }
-span {
+.current_series {
     color: white;
-    padding: 40px 0;
+    padding: 10px 40px;
+    top: -20px;
+    position: absolute;
+    left: 210px;
+    background-color: $brand_primary_color;
 }
 .container {
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
     justify-content: space-between;
+}
+.load_more {
+    padding-bottom: 20px;
+}
+.load_more_btn {
+    color: white;
+    margin: 0 auto;
+    display: table;
+    padding: 10px 40px;
+    background-color: $brand_primary_color;
 }
 </style>
